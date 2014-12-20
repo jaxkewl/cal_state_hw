@@ -7,6 +7,7 @@ import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+//Homework 10 file for Martin Hong 
 public class MartinHongWk10HW extends JPanel {
 
 	private Random rand = new Random();
