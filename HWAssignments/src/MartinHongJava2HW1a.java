@@ -94,9 +94,9 @@ public class MartinHongJava2HW1a extends JPanel implements Runnable {
 		g.fillOval(x, y, ballDiam, ballDiam);
 		String stats = "x: " + x + "  y: " + y;
 		if (mouseClicked)
-			stats += " true";
+			stats += " active: true";
 		else
-			stats += " false";
+			stats += " active: false";
 		g.drawString(stats, 10, getHeight() - 10);
 	}
 
