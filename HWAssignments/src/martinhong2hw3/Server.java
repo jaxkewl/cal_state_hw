@@ -27,7 +27,7 @@ import javax.swing.SwingUtilities;
 public class Server extends JFrame {
 
 	// this holds all the clients the server knows about
-	ArrayList<MyClient> myClients = new ArrayList<>();
+	ArrayList<MyClient> myClients = new ArrayList<MyClient>();
 
 	// GUI stuff
 	private JTextField enterField; // inputs message from user
@@ -72,18 +72,20 @@ public class Server extends JFrame {
 			// enable enterField so server user can send messages
 			setTextFieldEditable(true);
 
+			//create a server socket to listen on portNum
+			server = new ServerSocket(portNum, 100); // create
+														// ServerSocket
+
 			while (true) {
 				// wait for multiple connections
 				// this server is just listening for clients and spinning off
 				// new threads
 				// to handle them
-				server = new ServerSocket(portNum, 100); // create
-															// ServerSocket
 				try {
 					waitForConnection(); // wait for a connection
 					// getStreams(); // get input & output streams
 					// processConnection(); // process connection
-					portNum++;
+					//portNum++;
 				} // end try
 				catch (EOFException eofException) {
 					displayMessage("\nServer terminated connection");

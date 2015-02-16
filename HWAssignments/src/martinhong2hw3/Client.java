@@ -173,7 +173,7 @@ public class Client extends JFrame {
 
 		// if no command line args
 		if (args.length == 0)
-			application = new Client("12346"); // connect to using default port
+			application = new Client("12345"); // connect to using default port
 		else
 			application = new Client(args[0]); // use args to connect
 
