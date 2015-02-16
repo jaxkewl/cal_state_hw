@@ -23,7 +23,7 @@ public class MartinHongJava2HW2 {
 	// reaches the end of file. The results should be output to the text file
 	// "output.txt".
 
-	private String numbersFilePath = "./src/numbers.txt"; // contains user input
+	private String numbersFilePath = "./numbers.txt"; // contains user input
 															// ratings
 	private String outputFilePath = "./src/output.txt"; // contains read in
 														// values from
