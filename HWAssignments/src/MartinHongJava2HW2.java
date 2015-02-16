@@ -31,7 +31,7 @@ public class MartinHongJava2HW2 {
 
 	private Formatter formatter;
 
-	public void readRatings() {
+	public void readRatingsFromFile() {
 		// this array contains the ratings that was read from the numbers.txt
 		// file
 		int[] readRatings = new int[6];
@@ -58,7 +58,7 @@ public class MartinHongJava2HW2 {
 
 	}
 
-	public void getRatings() {
+	public void getRatingsFromUser() {
 		// this array contains the ratings the user inputted
 		int[] userRatings = new int[6];
 
@@ -103,8 +103,12 @@ public class MartinHongJava2HW2 {
 
 	public static void main(String[] args) {
 		MartinHongJava2HW2 hw2 = new MartinHongJava2HW2();
-		hw2.getRatings();
-		hw2.readRatings();
+		
+		//get user inputs and output to a file
+		hw2.getRatingsFromUser();
+		
+		//read in inputs from a file and then output to a file
+		hw2.readRatingsFromFile();
 	}
 
 }
